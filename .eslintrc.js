@@ -3,12 +3,18 @@ module.exports = {
     "node": true,
     "es6": true,
     "browser":true,
-    "jest/globals": true
+    "jest/globals": true,
+    "cypress/globals": true
   },
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended"
   ],
+  
+  "globals": {
+      "cy": true
+    }
+  ,
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
